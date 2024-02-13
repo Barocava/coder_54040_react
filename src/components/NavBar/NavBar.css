@@ -1,0 +1,25 @@
+.container-fluid {
+    max-width: 1300px;
+  }
+  
+.efecto {
+    transition: 1s;
+  }
+  
+.efecto:hover {
+    transform: scale(1.25);
+  }
+  
+.bi {
+    color: white;
+    font-size: 30px;
+    padding: 1rem;
+  }
+  
+.bi-house-fill {
+    padding: 0.5rem;
+  }
+  
+ul li a.active{
+    color: orange !important
+  }

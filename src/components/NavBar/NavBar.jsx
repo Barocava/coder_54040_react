@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./NavBar.css"
 
 const NavBar = () => {
     const [class_state_acerca, setClases_acerca] = useState("nav-link efecto")
