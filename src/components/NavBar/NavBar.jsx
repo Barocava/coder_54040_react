@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./NavBar.css"
 
-const NavBar = () => {
+const NavBar = ({ mensaje }) => {
     const [class_state_acerca, setClases_acerca] = useState("nav-link efecto")
     const [class_state_como, setClases_como] = useState("nav-link efecto")
     const [class_state_proyectos, setClases_proyectos] = useState("nav-link efecto active")
@@ -79,6 +79,9 @@ const NavBar = () => {
 
                     </ul>
                 </div>
+
+                <p className="navbar-brand m-0 p-0 fs-6">{mensaje}<span id="valor-moneda"></span></p>
+
             </div>
         </nav>
     </header>

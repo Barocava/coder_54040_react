@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar mensaje="Bienvenido 💲"/>
     </>
   )
 }
