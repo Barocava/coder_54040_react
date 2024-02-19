@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import "./NavBar.css"
+import CarWidget from '../CarWidget/CarWidget';
 
 const NavBar = ({ mensaje }) => {
     const [class_state_acerca, setClases_acerca] = useState("nav-link efecto");
@@ -96,7 +97,8 @@ const NavBar = ({ mensaje }) => {
                     </ul>
                 </div>
 
-                <p className="navbar-brand m-0 p-0 fs-6">{mensaje}<span id="valor-moneda"></span></p>
+                
+                <CarWidget stock={2}/>
 
             </div>
         </nav>
