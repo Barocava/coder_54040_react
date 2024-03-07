@@ -1,0 +1,25 @@
+.col {
+    min-width: 325px;
+  }
+  
+  .card img {
+    min-height: 250px;
+    object-fit: cover;
+  }
+  
+.card {
+    width: 325px;
+    height: 510px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+.acerca_botones {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-block: 1rem;
+  }
+
+.card:hover {
+    box-shadow: 10px 10px 5px grey;
+  }

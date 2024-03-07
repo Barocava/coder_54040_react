@@ -2,15 +2,16 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import "./NavBar.css"
 import CarWidget from '../CarWidget/CarWidget';
+import { Link } from 'react-router-dom';
 
-const NavBar = ({ mensaje }) => {
+const NavBar = () => {
     const [class_state_acerca, setClases_acerca] = useState("nav-link efecto");
     const [class_state_como, setClases_como] = useState("nav-link efecto");
     const [class_state_proyectos, setClases_proyectos] = useState("nav-link efecto active");
     const [class_state_contacto, setClases_contacto] = useState("nav-link efecto");
 
-    const handleClick_acerca = (event) => {
-        event.preventDefault();
+    
+    const handleClick_acerca = () => {
         setClases_acerca("nav-link efecto active");
     };
 
@@ -22,8 +23,7 @@ const NavBar = ({ mensaje }) => {
         }      
     },[class_state_acerca]);
 
-    const handleClick_como = (event) => {
-        event.preventDefault();
+    const handleClick_como = () => {
         setClases_como("nav-link efecto active");
     };
 
@@ -35,8 +35,7 @@ const NavBar = ({ mensaje }) => {
         }
     },[class_state_como]);
 
-    const handleClick_proyectos = (event) => {
-        event.preventDefault();
+    const handleClick_proyectos = () => {
         setClases_proyectos("nav-link efecto active");
     };
 
@@ -48,8 +47,7 @@ const NavBar = ({ mensaje }) => {
         }       
     },[class_state_proyectos]);
 
-    const handleClick_contacto = (event) => {
-        event.preventDefault();
+    const handleClick_contacto = () => {
         setClases_contacto("nav-link efecto active");
     };
 
@@ -66,9 +64,9 @@ const NavBar = ({ mensaje }) => {
         <nav className="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
             <div className="container-fluid">
 
-                <a className="navbar-brand" href="../index.html">
+                <Link to="/coder_54040_react/category/proyectos" className="navbar-brand">
                     <i className="bi bi-house-fill"></i>
-                </a>
+                </Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,25 +77,27 @@ const NavBar = ({ mensaje }) => {
                     <ul className="navbar-nav">
 
                         <li className="nav-item px-3">
-                            <a className={class_state_acerca} href="" onClick={handleClick_acerca} >Acerca de Nosotros</a>
+                            <Link to={"/coder_54040_react/category/metros"} className={class_state_acerca} 
+                         onClick={handleClick_acerca} >
+                                Metros
+                            </Link>
                         </li>
 
                         <li className="nav-item px-3">
-                            <a className={class_state_como} aria-current="page" href="" onClick={handleClick_como}>¿Como Funciona?</a>
+                            <Link to={"/coder_54040_react/category/precio"} className={class_state_como} aria-current="page" onClick={handleClick_como}>Precio</Link>
                         </li>
 
                         <li className="nav-item px-3 active">
-                            <a className={class_state_proyectos} href="" onClick={handleClick_proyectos}>Proyectos</a>
+                            <Link to={"/coder_54040_react/category/proyectos"} className={class_state_proyectos} onClick={handleClick_proyectos}>Proyectos</Link>
                         </li>
 
                         <li className="nav-item px-3">
-                            <a className={class_state_contacto} href="" onClick={handleClick_contacto}>Contacto</a>
+                            <Link to={"/coder_54040_react/category/ubicacion"} className={class_state_contacto} onClick={handleClick_contacto}>Ubicacion</Link>
                         </li>
 
                     </ul>
                 </div>
 
-                
                 <CarWidget stock={2}/>
 
             </div>
