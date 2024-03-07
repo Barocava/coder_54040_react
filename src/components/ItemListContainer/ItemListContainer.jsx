@@ -1,13 +1,29 @@
+import { useParams } from "react-router-dom"
+import ItemList from "../ItemList/ItemList"
 import "./ItemListContainer.css"
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 
-const ItemListContainer = ({mensaje}) => {
+const ItemListContainer = () => {
+    const {categoryId} = useParams();
+    const {productId} = useParams();
+    let num = parseInt(categoryId);
+    if(categoryId === undefined) num = parseInt(productId);
 
-    return (
-        <div className="centrado">
-            <h1>{mensaje}</h1>
-        </div>
-    )
-
+    console.log(categoryId);
+    
+    if(isNaN(num)){
+        return (
+            <div className="centrado">
+                <ItemList />
+            </div>
+        )
+    } else {
+        return (
+            <div className="centrado">
+                <ItemDetailContainer />
+            </div>
+        )
+    }
 }
 
 export default ItemListContainer

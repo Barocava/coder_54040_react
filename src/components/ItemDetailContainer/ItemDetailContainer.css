@@ -1,0 +1,18 @@
+.col {
+    min-width: 325px;
+  }
+  
+  .imagenes {
+    min-height: 550px;
+    object-fit: cover;
+  }
+  
+.detalle {
+    width: 1000px;
+
+    transition: box-shadow 0.3s ease;
+  }
+
+.card:hover {
+    box-shadow: 10px 10px 5px grey;
+  }
