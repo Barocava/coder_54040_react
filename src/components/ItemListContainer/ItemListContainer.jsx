@@ -5,25 +5,19 @@ import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 
 const ItemListContainer = () => {
     const {categoryId} = useParams();
-    const {productId} = useParams();
-    let num = parseInt(categoryId);
-    if(categoryId === undefined) num = parseInt(productId);
-
     console.log(categoryId);
-    
-    if(isNaN(num)){
-        return (
-            <div className="centrado">
-                <ItemList />
-            </div>
-        )
-    } else {
-        return (
-            <div className="centrado">
-                <ItemDetailContainer />
-            </div>
-        )
+    return <>
+    {
+        categoryId ? 
+        <div className="centrado">
+            <ItemList />
+        </div>
+        :
+        <div className="centrado">
+            <ItemDetailContainer />
+        </div>
     }
+    </>
 }
 
 export default ItemListContainer

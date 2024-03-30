@@ -1,18 +1,19 @@
-const CarWidget = ({stock}) => {
+import { useCart } from "../../../context/CartContext";
+import { Link } from 'react-router-dom';
 
-    const handleClick = (event) =>{
-        event.preventDefault();
-    }
+const CarWidget = () => {
+    const {totalQuantity} = useCart();
 
     return (
 
-<a href="" className="position-relative" onClick={handleClick}>
+
+<Link to={"/coder_54040_react/checkout"} className="position-relative">
   <i className="bi bi-cart"></i>
   <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    {stock}
+    {totalQuantity}
     <span className="visually-hidden">productos en el carrito</span>
   </span>
-</a>
+</Link>
     )
 }
 

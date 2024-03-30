@@ -4,7 +4,7 @@ import "./Item.css";
 const Item = ({ casa }) => {
   return (
     <div className="card col col-lg-4 py-3 m-3">
-      <img src={casa.miniatura} alt={casa.titulo} className="card-img-top" />
+      <img src={casa.miniatura} alt={casa.titulo} referrerPolicy="no-referrer" className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{casa.titulo}</h5>
         <p className="card-text">
@@ -16,7 +16,7 @@ const Item = ({ casa }) => {
         </p>
         <div className="acerca_botones" style={{ paddingBlock: "0rem" }}>
           <Link to={`/coder_54040_react/detail/${casa.id}`} className="btn btn-primary" style={{ width: "60%", marginBottom: "0.5rem" }}>
-            Ver detalle
+            Ver detalle 🔍
           </Link>
         </div>
       </div>
