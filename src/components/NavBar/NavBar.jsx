@@ -98,7 +98,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <CarWidget stock={2}/>
+                <CarWidget/>
 
             </div>
         </nav>

@@ -16,7 +16,7 @@ let casas = [];
 
 casas.push(new Casas({
     id: 0,
-    miniatura: "/coder_54040_react/img/planimetria_casa_Larrain.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1TSwZ_oEHwDhaJOdHeQKf5pMdjVyPA02W",
     titulo: "Casa Larrain",
     metros: 350,
     ubicacion: "Concon",
@@ -28,7 +28,7 @@ casas.push(new Casas({
 
 casas.push(new Casas({
     id: 1,
-    miniatura: "/coder_54040_react/img/planimetria_casa_Moncada.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1BGOw-f9584oJmcDq3XnP0L_PMf9zhmL7",
     titulo: "Casa Moncada",
     metros: 350,
     ubicacion: "Cantagua",
@@ -40,7 +40,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 2,
-    miniatura: "/coder_54040_react/img/planimetria_casa_sennerman.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1zjBqoxphabssAnB9K3Q3rAEHzv_Z9aGr",
     titulo: "Casa Sennerman",
     metros: 350,
     ubicacion: "Cantagua",
@@ -52,7 +52,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 3,
-    miniatura: "/coder_54040_react/img/planimetria_casa_espinoza.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/12GCIqNXFInY5_wIiC7aYv6CvaHzTHYeE",
     titulo: "Casa Espinoza",
     metros: 350,
     ubicacion: "Brisas Santo Domingo",
@@ -64,7 +64,8 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 4,
-    miniatura: "/coder_54040_react/img/planimetria_casa_fierro.jpg",
+    //miniatura: "/coder_54040_react/img/planimetria_casa_fierro.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1AosM4bfi7JNKlkza6zB46H7eBCaO7TQH",
     titulo: "Casa Fierro",
     metros: 300,
     ubicacion: "Brisas de Santo Domingo",
@@ -76,7 +77,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 5,
-    miniatura: "/coder_54040_react/img/planimetria_casa_guevera.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1yeIKlggtUbh7v-hZ_RynrBrpEcJtfuvc",
     titulo: "Casa Guevara",
     metros: 400,
     ubicacion: "Chicureo",
@@ -88,7 +89,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 6,
-    miniatura: "/coder_54040_react/img/casa_campino/DSC043712.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1v35HXgkLwXOhUAttZr6h4pB5yJ1NQsn3",
     titulo: "Casa Campino",
     metros: 300,
     ubicacion: "Brisas de Santo Domingo",
@@ -100,7 +101,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 7,
-    miniatura: "/coder_54040_react/img/casa_caorsi/exterior-8-copia3.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1gxLl9BMC05Gqd5ULpHwmE60Thg8wxkCw",
     titulo: "Casa Caorsi",
     metros: 350,
     ubicacion: "Rancagua",
@@ -112,7 +113,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 8,
-    miniatura: "/coder_54040_react/img/casa_mallorca/Mallorca-32.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1kBDnpdAqutgM08WwuxZPziiNYbjgO2-3",
     titulo: "Casa Mallorca",
     metros: 400,
     ubicacion: "Cachagua",
@@ -124,7 +125,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 9,
-    miniatura: "/coder_54040_react/img/casa_nallar/Nallar-82.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/1Jv60anqrf89Cd7XIO_mjU26yTAxWYYYV",
     titulo: "Casa Nallar",
     metros: 400,
     ubicacion: "Chicureo",
@@ -136,7 +137,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 10,
-    miniatura: "/coder_54040_react/img/casa_reyes/Reyes-51.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/17Sa11oeFNpiPTN-3mQL4Kcz6wg8Sp7nn",
     titulo: "Casa Reyes",
     metros: 500,
     ubicacion: "Lo Barnechea",
@@ -148,7 +149,7 @@ casas.push(new Casas({
   
   casas.push(new Casas({
     id: 11,
-    miniatura: "/coder_54040_react/img/casa_tapia/Tapia-72.jpg",
+    miniatura: "https://lh3.googleusercontent.com/d/14K3DTrmQPLVFRrWI-PNt9rEFhH1Cv2iK",
     titulo: "Casa Tapia",
     metros: 400,
     ubicacion: "Concon",
