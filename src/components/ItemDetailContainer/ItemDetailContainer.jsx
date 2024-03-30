@@ -56,7 +56,7 @@ const ItemDetailContainer = () => {
                         </div>
                     </div>
                 )
-                : (<div>Producto no encontrado</div>)
+                : (<div style={{minHeight:"85vh"}}>Producto no encontrado</div>)
             }
 
         </>);
